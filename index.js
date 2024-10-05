@@ -23,7 +23,7 @@ const imageGrid = document.getElementById("imageGrid");
 
 const listFolders = async () => {
   try {
-    const response = await fetch("./songs");
+    const response = await fetch('https://mak585585.github.io/spotify/songs');
     const result = await response.text();
 
     let div = document.createElement("div");
@@ -197,7 +197,7 @@ const listFolders = async () => {
 };
 const listSongsInFolder = async (folderName) => {
   try {
-    const response = await fetch(`./songs/${folderName}`);
+    const response = await fetch(`https://mak585585.github.io/spotify/songs/${folderName}`);
     const result = await response.text();
 
     let div = document.createElement("div");
