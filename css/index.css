@@ -1,0 +1,708 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    padding-top: 8px;
+}
+
+.top {
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    background: #000;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.top img {
+    width: 30px;
+}
+
+.logo {
+    width: 32px;
+    cursor: pointer;
+
+}
+
+.top-2 {
+    gap: 7px;
+    margin-left: 50px;
+}
+
+.home {
+    width: 48px;
+    height: 48px;
+    background-color: hsl(0deg 0% 12.16%);
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.home img {
+    width: 20px;
+
+}
+
+.home:hover {
+    transform: scale(1.05);
+
+}
+
+.input-1 {
+    background-color: hsl(0deg 0% 12.16%);
+    width: 40vw;
+    height: 48px;
+    border-radius: 23px;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border: 1px solid transparent;
+    transition: border 0.3s ease;
+
+
+}
+
+.input-1:focus-within {
+    border: 1px solid white;
+}
+
+.input-1:hover,
+.input-1:hover input {
+    background-color: hsl(0, 0%, 19%);
+}
+
+.input-1 img {
+    width: 25px;
+}
+
+.input-1 input {
+    background-color: hsl(0deg 0% 12.16%);
+    border: none;
+    width: 85%;
+    height: 100%;
+    border-right: 1px solid #b3b3b3;
+    outline: none;
+
+}
+
+.head-2 {
+    gap: 30px;
+}
+
+.head-2 img {
+    width: 25px;
+}
+
+.head-2 button {
+    border: none;
+}
+
+.download-content {
+    gap: 5px;
+}
+
+.download-content img {
+    width: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 5px;
+    margin-top: 20px;
+    height: 88vh;
+    position: relative;
+
+}
+
+
+
+.left {
+
+    width: 31vw;
+    height: 100%;
+    background-color: hsl(0deg 0% 12.16%);
+    padding: 20px 16px;
+    border-radius: 5px;
+}
+
+.right {
+
+    width: 67vw;
+    height: 100%;
+    background-color: hsl(0deg 0% 12.16%);
+    overflow-y: auto;
+    position: relative;
+    border-radius: 5px;
+    overflow-y: auto;
+
+}
+
+
+.left-1 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.left-1-1 {
+    display: flex;
+    gap: 10px;
+
+}
+
+.left-1-1 h4 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #b3b3b3;
+
+}
+
+.left-1-2 {
+    display: flex;
+    gap: 20px;
+}
+
+.left-1-2>img {
+    width: 16px;
+}
+
+.library {
+    width: 20px;
+}
+
+.artist-button button {
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background-color: hsl(0, 0%, 19%);
+    color: white;
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.artist-button button:hover {
+    background-color: hsl(0, 0%, 27%);
+
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    color: hsl(0 0% 65% / 1);
+    justify-content: space-between;
+
+
+}
+
+.search-box svg {
+    width: 16px;
+    fill: hsl(0 0% 65% / 1);
+    margin: 8px 0;
+
+}
+
+.search-box svg:hover {
+    fill: white;
+}
+
+.recent {
+    gap: 7px;
+}
+
+.list-songs {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+
+}
+
+.list-songs>.song-wrapper {
+    border: 1px solid hsl(0 0% 65% / 1);
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: white;
+    justify-content: space-between;
+}
+
+.song-wrapper div {
+    display: flex;
+    align-items: center;
+}
+
+.last span {
+    color: white;
+}
+
+.cards {
+    color: white;
+}
+
+
+
+.folder-card {
+
+    width: 200px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 12px;
+
+
+}
+
+.folder-card:hover {
+    background-color: hsl(0, 0%, 19%);
+
+}
+
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+
+
+}
+
+.folder-card> :first-child {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    /* Add any other styles you want */
+}
+
+.folder-logo {
+    width: 15px;
+    filter: invert();
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.folder {
+    position: absolute;
+    top: 130px;
+    font-size: 35px;
+    color: rgb(220, 157, 157);
+}
+
+.folder-card {
+    font-family: sans-serif;
+
+
+}
+
+.folder-card h4 {
+    font-size: 16px;
+    margin: 5px 0px;
+    font-weight: 300;
+    margin-right: 25px;
+
+}
+
+h5 {
+    font-size: 12px;
+    margin: 5px 0px;
+    font-weight: 100;
+    margin-right: 25px;
+    color: hsl(0 0% 65% / 1);
+    ;
+
+}
+
+.play-hover {
+    position: absolute;
+    bottom: -10px;
+    /* Start position below the card */
+    right: 20px;
+    /* Adjust as needed */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    /* Smooth transition for both transform and opacity */
+    z-index: 2;
+    opacity: 0;
+    /* Initially hidden */
+    visibility: hidden;
+    /* Hidden from the layout */
+}
+
+.folder-card:hover .play-hover {
+    transform: translateY(-70px);
+    /* Move the button up */
+    opacity: 1;
+    /* Fade in */
+    visibility: visible;
+    /* Make it visible */
+
+}
+
+.play-hover svg circle {
+    transition: fill 0.3s ease-in-out;
+    /* Smooth transition for fill */
+}
+
+.play-hover:hover svg circle {
+    fill: #1cf969;
+    /* Change fill color on hover */
+    transform: scale(1.01);
+    /* Scale up the circle on hover */
+
+}
+
+.play-button {
+    width: 25px;
+    border: 2px solid hsl(0 0% 65% / 1);
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    margin-left: 5px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.play-button:hover {
+    border-color: white;
+    cursor: pointer;
+
+}
+
+.play-button:hover svg path {
+    fill: white;
+}
+
+.contros-all {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    justify-content: space-between;
+    height: 100px;
+
+}
+
+.time-display span {
+    color: white;
+}
+
+.left-display {
+    width: 32%;
+
+
+    height: 50px
+}
+
+.seek-buttons {
+    width: 50%;
+    align-items: center;
+}
+
+.time-display {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.time-display input {
+    width: 90%;
+
+}
+
+.controls button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    width: 35px;
+
+}
+
+.controls button img {
+    width: 100%;
+
+}
+
+.controls button img:hover {
+    transform: scale(1.1);
+
+}
+
+.volume-controls button {
+    background-color: #b3b3b300;
+    border: none;
+
+}
+
+.volume-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.volume-controls svg {
+    width: 30px;
+
+}
+
+.volume-controls svg:hover {
+    transform: scale(1.1);
+
+}
+
+.item-right {
+    width: 50px;
+
+    position: relative;
+}
+
+.item-right .play-button {
+    position: absolute;
+    right: 0px;
+}
+
+.music-animation {
+    width: 60px;
+    height: 30px;
+    position: relative;
+}
+
+.music-animation img {
+    position: absolute;
+    left: 11px;
+    bottom: -10px;
+    object-fit: contain;
+
+}
+
+.song-name {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.ham-click svg {
+    display: none
+}
+.cross{
+    display: none;
+}
+
+@media (max-width: 1350px) {
+    .list-songs>.song-wrapper div svg {
+        width: 25px;
+        /* Set the width of SVGs within song-wrapper */
+    }
+
+    .left {
+        width: 42vw;
+        /* Set the width of the left section to 38% of the viewport width */
+    }
+
+    .right {
+        width: 56vw;
+        /* Set the width of the right section to 60% of the viewport width */
+    }
+
+
+    .song-name {
+        font-size: 14px;
+        overflow: hidden;
+        margin-right: 5px;
+
+    }
+
+
+}
+
+@media (max-width: 1000px) {
+    .top img {
+        width: 20px;
+
+    }
+
+    .top-2 {
+        margin-left: 10px;
+    }
+
+    input::placeholder {
+        color: #888;
+        opacity: 0;
+        /* Set the opacity (default is 0.5) */
+    }
+
+    .input-1>img {
+        margin-left: 5px;
+    }
+
+    .head-2 button {
+        margin-left: 10px;
+    }
+
+    .list-songs>.song-wrapper div svg {
+        width: 25px;
+        /* Set the width of SVGs within song-wrapper */
+    }
+
+
+    .left {
+        width: 76vw;
+        position: absolute;
+        z-index: 5;
+        left: -78vw;
+        top: -8px;
+        height: calc(100vh - 170px);
+        border: 1px solid rgb(191, 34, 34);
+        border-left: 0px;
+        transition: .6s ease-in-out 0.1s;
+
+    }
+
+    .content {
+        margin-top: 20px;
+    }
+
+
+
+
+    .right {
+        width: 100vw;
+        position: relative;
+        right: 0px;
+        top: -12px;
+    }
+
+
+    .song-name {
+        font-size: 14px;
+        overflow: hidden;
+        margin-right: 5px;
+
+    }
+
+    .hamburger {
+        left: -1vw;
+    }
+
+    .ham-click svg {
+        display: block;
+        width: 35px;
+        position: absolute;
+        left: 0px;
+        top: -40px;
+        position: fixed;
+        left: 0px;
+        top: 35px;
+        z-index: 3;
+        filter: invert(.9);
+
+    }
+
+    .ham-click svg:hover {
+        filter: invert(1);
+
+    }
+
+    .cross {
+        position: absolute;
+        right: 4px;
+        top: -3px;
+        filter: invert(.9);
+        display: block;
+
+
+
+    }
+
+    .cross svg {
+        width: 15px;
+    }
+
+    .cross:hover {
+        filter: invert(1);
+    }
+
+    .folder-card {
+        font-family: sans-serif;
+        width: 365px;
+        height: 350px;
+        overflow: hidden;
+
+    }
+
+    .folder-card> :first-child {
+        width: 330px;
+        height: 350px;
+        overflow: hidden;
+
+    }
+
+    .mood-text {
+        margin-right: 125px;
+        margin-top: 5px;
+    }
+
+    .contros-all {
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+    }
+
+    .left-display {
+        display: none;
+    }
+
+    .volume-controls {
+        position: absolute;
+        right: 0px;
+        bottom: 64px;
+
+
+
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .song-name {
+        font-size: 11px;
+    }
+
+    .item-right span {
+        font-size: 12px;
+    }
+
+    .music-animation img {
+        left: -10px;
+    }
+
+
+
+}
+
+.item-right {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,20 @@
+.invert{
+    filter: invert();
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+   
+.flex-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.filter {
+
+    filter: invert(0.7);
+ 
+ 
+ }

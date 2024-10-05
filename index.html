@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/utility.css"/>
+</head>
+
+<body>
+  <div class="main">
+    <div class="top">
+      <img class="invert logo" src="./photos/logo.svg" alt="" />
+      <div class="top-2 flex">
+        <div class="home flex">
+          <img src="./photos/home.svg" alt="" />
+        </div>
+        <div class="input-1 flex">
+          <img class="invert" src="./photos/search.svg" alt="" />
+          <input type="text" placeholder="what do you want to play?" />
+          <img class="invert" src="./photos/input-logo-1.svg" alt="" />
+        </div>
+      </div>
+      <div class="head-2 flex invert">
+        <button>
+          <div class="download-content flex">
+            <img src="./photos/download-button.svg" alt="" />Install
+            App
+          </div>
+        </button>
+        <img src="./photos/notification.svg" alt="" />
+      </div>
+    </div>
+    <div class="content">
+    
+      <div class="left">
+        <div class="cross" onclick="cross()">
+          <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <line x1="3" y1="3" x2="21" y2="21" stroke="black" stroke-width="2"/>
+            <line x1="21" y1="3" x2="3" y2="21" stroke="black" stroke-width="2"/>
+          </svg>
+          
+        </div>
+        <div class="left-1">
+          <div class="left-1-1">
+            <img class="library filter" src="./photos/library.svg" alt="">
+            <h4>Your Library</h1>
+          </div>
+          <div class="left-1-2">
+            <img class="filter" src="./photos/plus.svg" alt="">
+            <img class="filter" src="./photos/arrow-right.svg" alt="">
+          </div>
+
+        </div>
+        <div class="artist-button">
+          <button>Artist</button>
+        </div>
+        <div class="search-box ">
+          <svg data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 dYnaPI CIVozJ8XNPJ60uMN23Yg"
+            viewBox="0 0 16 16">
+            <path
+              d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z">
+            </path>
+          </svg>
+          <div class=" recent flex">
+            <span>Recents</span>
+            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 cAMMLk">
+              <path
+                d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <div class="list-songs">
+
+        </div>
+      </div>
+      <div class="right">
+        <div class="ham-click">
+          <svg onclick="apply()" class="invert" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+            viewBox="0 0 50 50">
+            <path
+              d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+            </path>
+          </svg>
+        </div>
+        <div class="cards image-grid" id="imageGrid"" style=" padding-bottom: 100px;">
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="contros-all flex">
+      <div class="left-display">
+
+      </div>
+
+
+      <div class="flex-c seek-buttons">
+        <div class="controls">
+          <button class="prev-btn">
+            <img src="./photos/previous.svg" alt="">
+          </button>
+          <button class="play-pause-btn">
+            <img src="./photos/play-button.svg" alt="">
+          </button>
+          <button class="next-btn">
+            <img src="./photos/next.svg" alt="">
+          </button>
+        </div>
+
+        <div class="time-display last flex">
+          <span class="current-time">0:00</span>
+          <input type="range" class="seek-bar" value="0" min="0" step="1" />
+          <span class="max-time">0:00</span>
+        </div>
+      </div>
+
+
+      <div class="volume-controls">
+        <button class="mute-btn invert">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="black"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 5L6 9H2v6h4l5 4V5z" />
+            <path d="M19 9a5 5 0 0 1 0 6" />
+            <path d="M21 7a9 9 0 0 1 0 10" />
+          </svg>
+        </button>
+        <input type="range" class="volume-bar" value="1" min="0" max="1" step="0.01" style="width: 100px" />
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+  
+  <script>
+   function apply() {
+    document.querySelector(".left").classList.add("hamburger");
+}
+function cross() {
+    document.querySelector(".left").classList.remove("hamburger");
+}
+
+
+ const folderCards = document.querySelectorAll('.cards');
+
+folderCards.forEach(card => {
+    card.addEventListener('click', function() {
+        // Add the hamburger class to the left element
+        document.querySelector(".left").classList.add("hamburger");
+         console.log("clicked")
+
+        
+    });
+});
+
+  </script>
+  <script src="/js/index.js"></script>
+</body>
+
+</html>
